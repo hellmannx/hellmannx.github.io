@@ -9,6 +9,7 @@
 			background-color: #99a5a8;
 		}
 	</style>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 	<h1>Finite Space Construction</h1>
@@ -30,6 +31,12 @@
 	<h2>Thoughts on Error Margin in Integral and Derivative</h2>
 	<p>To eliminate error margin in derivative and integral, you need to reach infinity with limits. However, such use is not feasible in numerical computations. But you need to consider the fact that error margin could be as low as you wish it to be, and practical applications always tolerate error margin. Therefore, you can numerically compute derivative and integral in computers with adequate error margin. 
 	It is not possible to eliminate error margin in numerical computations because you cannot reach infinity, multiply (integral) or divide (derivative) by zero.</p>
+
+	<p>\[\lim_{n\to\infty} \sum_{i=1}^{n} f(x_i) * \frac{b-a}{n}\]</p>
+	<p>\[f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}\]</p>
+
+	<p>When you want to use the above formulas numerically in computers, you cannot divide by zero in the derivative definition or you cannot multiply by zero in the integral definition; however, 
+	you can place any value as small as you want in order to bring the error margin to the desired value. Considering practical applications always tolerate an error margi, you need not fully get rid of it.</p>
 	
 	<hr>
 
