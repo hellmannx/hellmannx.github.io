@@ -32,7 +32,7 @@
 	<p>To eliminate error margin in derivative and integral, you need to reach infinity with limits. However, such use is not feasible in numerical computations. But you need to consider the fact that error margin could be as low as you wish it to be, and practical applications always tolerate error margin. Therefore, you can numerically compute derivative and integral in computers with adequate error margin. 
 	It is not possible to eliminate error margin in numerical computations because you cannot reach infinity, multiply (integral) or divide (derivative) by zero.</p>
 
-	<p>\[\lim_{n\to\infty} \sum_{i=1}^{n} f(x_i) * \frac{b-a}{n}\]</p>
+	<p>\[ \int_{a}^{b} f(x) \,dx = \lim_{n\to\infty} \sum_{i=1}^{n} f(x_i) * \frac{b-a}{n}\]</p>
 	<p>\[f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}\]</p>
 
 	<p>When you want to use the above formulas numerically in computers, you cannot divide by zero in the derivative definition or you cannot multiply by zero in the integral definition; however, 
