@@ -36,6 +36,7 @@
 	<p>You would see that the integral will never take on the value 1 because integrals with infinite boundaries are undefined. If you want to use \(\infty\) notation, you should drop \(dx\), and should come up with a new concept.</p>
 	<p>\[\displaystyle {\widehat {f}}(\xi ) = \int _{-\infty }^{\infty }f(x)\ e^{-i2\pi \xi x} \,dx, \quad \forall \xi \in \mathbb {R} .\]</p>
 	<p>Fourier transform in its current from is not meaningful. Furthermore, you cannot numerically precisely compute an integral and take its limit to infinity. But fourier transform is useful and works within finite boundaries.</p>
+	<p>Interestingly, though, if rectangles (instead of \(dx\)) are used to approximate the integral, there will be infinite number of rectangles between an infinite boundary - where there is no amguity as there is with \(dx\).</p>
 
 	<h2>Thoughts on Error Margin in Integral and Derivative</h2>
 	<p>To eliminate error margin in derivative and integral, you need to reach infinity with limits. However, such use is not feasible in numerical computations. But you need to consider the fact that error margin could be as low as you wish it to be, and practical applications always tolerate error margin. Therefore, you can numerically compute derivative and integral in computers with adequate error margin. 
